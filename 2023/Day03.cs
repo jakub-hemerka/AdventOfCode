@@ -88,13 +88,10 @@ public class Day03 : IDay
                     continue;
                 }
 
-                if (AreCoordinatesValid(row, column) && char.IsDigit(_lines[row][column]))
+                if (AreCoordinatesValid(row, column) && char.IsDigit(_lines[row][column]) && canAdd)
                 {
-                    if (canAdd)
-                    {
                         output.Add(ExtractNumber(column, _lines[row]));
                         canAdd = false;
-                    }
                 }
             }
         }

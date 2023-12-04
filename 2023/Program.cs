@@ -2,7 +2,7 @@
 using AdventLibrary;
 
 InputReader reader = new();
-IDay day = new Day03(reader);
+IDay day = new Day04(reader);
 
 int result = day.SecondPuzzle();
 
